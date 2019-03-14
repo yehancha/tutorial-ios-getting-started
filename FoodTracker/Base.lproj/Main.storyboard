@@ -42,9 +42,13 @@
                                     </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="zca-Dc-QXn">
                                         <rect key="frame" x="0.0" y="104.5" width="304" height="320"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="zca-Dc-QXn" secondAttribute="height" multiplier="19:20" id="mzA-Eo-X2O"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="GdW-n3-IDc" appends="YES" id="GPd-uM-CcB"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -53,19 +57,29 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="UrO-SA-GuQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="BVl-rr-ELX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UrO-SA-GuQ" secondAttribute="trailing" constant="8" id="bkr-lo-TnU"/>
                             <constraint firstItem="UrO-SA-GuQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="p93-BZ-B6t"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GdW-n3-IDc" appends="YES" id="rOs-lS-IES"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="mealNameLabel" destination="IgP-KG-LDx" id="rNV-2P-c3H"/>
                         <outlet property="nameTextField" destination="kM6-u4-bBf" id="lo2-5Z-p9Z"/>
+                        <outlet property="photoImageView" destination="zca-Dc-QXn" id="Lmf-3s-B62"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GdW-n3-IDc">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="fCf-eO-1is"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-82.5" y="133.09859154929578"/>
         </scene>
