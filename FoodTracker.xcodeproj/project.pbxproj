@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916E50C8223A4B0C0065BD43 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916E50C7223A4B0C0065BD43 /* RatingControl.swift */; };
 		91C9731722378E2700001C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C9731622378E2700001C35 /* AppDelegate.swift */; };
 		91C9731922378E2700001C35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C9731822378E2700001C35 /* ViewController.swift */; };
 		91C9731C22378E2700001C35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C9731A22378E2700001C35 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		916E50C7223A4B0C0065BD43 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		91C9731322378E2700001C35 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C9731622378E2700001C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91C9731822378E2700001C35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				91C9731622378E2700001C35 /* AppDelegate.swift */,
 				91C9731822378E2700001C35 /* ViewController.swift */,
+				916E50C7223A4B0C0065BD43 /* RatingControl.swift */,
 				91C9731A22378E2700001C35 /* Main.storyboard */,
 				91C9731D22378E2E00001C35 /* Assets.xcassets */,
 				91C9731F22378E2E00001C35 /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91C9731922378E2700001C35 /* ViewController.swift in Sources */,
+				916E50C8223A4B0C0065BD43 /* RatingControl.swift in Sources */,
 				91C9731722378E2700001C35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +363,7 @@
 		91C9733122378E2F00001C35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -378,6 +383,7 @@
 		91C9733222378E2F00001C35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
