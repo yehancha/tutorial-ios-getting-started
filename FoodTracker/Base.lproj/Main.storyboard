@@ -116,7 +116,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="hp1-4m-9jv">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="lQf-FX-2cC"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="lQf-FX-2cC">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="0AH-dv-Urn"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="RkD-ek-uvS">
                             <connections>
                                 <segue destination="jat-9F-IcS" kind="unwind" unwindAction="unwindToMealListWithSender:" id="2v5-8S-I2j"/>
